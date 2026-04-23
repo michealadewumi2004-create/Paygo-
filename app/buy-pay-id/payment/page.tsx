@@ -24,13 +24,13 @@ export default function PaymentPage() {
   }, [router])
 
   const handleCopyAmount = () => {
-    navigator.clipboard.writeText("7,250")
+    navigator.clipboard.writeText("10,000")
     setCopiedAmount(true)
     setTimeout(() => setCopiedAmount(false), 2000)
   }
 
   const handleCopyAccountNumber = () => {
-    navigator.clipboard.writeText("8126932613")
+    navigator.clipboard.writeText("7087862200")
     setCopiedAccount(true)
     setTimeout(() => setCopiedAccount(false), 2000)
   }
@@ -62,7 +62,7 @@ export default function PaymentPage() {
           </div>
 
           <div className="text-right">
-            <div className="text-xl font-bold">NGN 7,250</div>
+            <div className="text-xl font-bold">NGN 10,000</div>
             <div className="text-gray-600">{formData.email}</div>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function PaymentPage() {
             <div>
               <p className="text-gray-700 mb-1">Amount</p>
               <div className="flex items-center justify-between">
-                <p className="font-bold">NGN 7,250</p>
+                <p className="font-bold">NGN 10,000</p>
                 <button
                   onClick={handleCopyAmount}
                   className="bg-orange-400 text-white px-3 py-1 rounded text-sm"
@@ -89,7 +89,7 @@ export default function PaymentPage() {
             <div>
               <p className="text-gray-700 mb-1">Account Number</p>
               <div className="flex items-center justify-between">
-                <p className="font-bold">8126932613</p>
+                <p className="font-bold">7087862200</p>
                 <button
                   onClick={handleCopyAccountNumber}
                   className="bg-orange-400 text-white px-3 py-1 rounded text-sm"
@@ -106,7 +106,7 @@ export default function PaymentPage() {
 
             <div>
               <p className="text-gray-700 mb-1">Account Name</p>
-              <p className="font-bold">IMAMU-IMAMU</p>
+              <p className="font-bold">DORCAS-SIJU</p>
             </div>
           </div>
 
